@@ -9,6 +9,9 @@
 #include "permutacao_repeticao.c"
 #include "matrizes.c"
 #include "matrizes/soma.c"
+#include "matrizes/subtracao.c"
+#include "matrizes/multiplicacao.c"
+#include "matrizes/determinante.c"
 
 
 int main() {
@@ -43,23 +46,31 @@ int main() {
                 break;
 
             case 2: // Arranjo
+                printf("Digite o valor de n (max 12): ");
+                scanf("%d", &n);
+                printf("Digite o valor de k: ");
+                scanf("%d", &k);
+                resultado = arranjo(n, k);
+                printf(">> Resultado: Arranjo A(%d, %d) e %d\n", n, k, resultado);
+                break;
+
             case 3: // Binomial
+                printf("Digite o valor de n (max 12): ");
+                scanf("%d", &n);
+                printf("Digite o valor de k: ");
+                scanf("%d", &k);
+                resultado = binomial(n, k);
+                printf(">> Resultado: Binomial (%d | %d) e %d\n", n, k, resultado);
+                break;
+
             case 4: // Combinação
                 printf("Digite o valor de n (max 12): ");
                 scanf("%d", &n);
                 printf("Digite o valor de k: ");
                 scanf("%d", &k);
+                resultado = combinacao(n, k);
+                printf(">> Resultado: Combinacao C(%d, %d) e %d\n", n, k, resultado);
 
-                if (opcao == 2) {
-                    resultado = arranjo(n, k);
-                    printf(">> Resultado: Arranjo A(%d, %d) e %d\n", n, k, resultado);
-                } else if (opcao == 3) {
-                    resultado = binomial(n, k);
-                    printf(">> Resultado: Binomial (%d | %d) e %d\n", n, k, resultado);
-                } else {
-                    resultado = combinacao(n, k);
-                    printf(">> Resultado: Combinacao C(%d, %d) e %d\n", n, k, resultado);
-                }
                 break;
 
             case 5: // Permutação Simples
@@ -92,7 +103,7 @@ int main() {
 
             case 7:
                 //menu 2 para operações com matrizes
-               matrizes();
+                matrizes();
 
 
             case 0: // Sair
@@ -107,7 +118,12 @@ int main() {
                 printf("Opcao invalida! Tente novamente.\n");
                 break;
         }
-    } while (opcao != 0);
+    } while
+    (opcao
+     !=
+     0
+    );
 
-    return 0;
+    return
+            0;
 }
