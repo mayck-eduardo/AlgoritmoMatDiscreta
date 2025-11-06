@@ -118,11 +118,7 @@ int main() {
                 printf("Opcao invalida! Tente novamente.\n");
                 break;
         }
-    } while
-    (opcao
-     !=
-     0
-    );
+    } while (opcao != 0);
 
     return
             0;
