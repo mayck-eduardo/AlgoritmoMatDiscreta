@@ -8,3 +8,5 @@ int permutacao_com_repeticao(int n, int k_array[], int num_grupos) {
     
     return fatorial(n) / denominador;
 }
+
+

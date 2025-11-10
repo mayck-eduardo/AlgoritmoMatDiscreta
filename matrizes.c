@@ -10,7 +10,7 @@ int matrizes() {
         printf("1. SOMA DE MATRIZES\n");
         printf("2. SUBTRACAO DE MATRIZES\n");
         printf("3. MULTIPLICACAO DE MATRIZ\n");
-        printf("3. DETERMINANTE DA MATRIZ\n");
+        printf("4. DETERMINANTE DA MATRIZ\n");
 
         printf("0. Sair\n");
         printf("---------------------------------------------\n");

@@ -16,6 +16,7 @@ int multiplicacao(int c[2][2]) {
             printf("%d\t", temp[i][j]);
         }
     }
+}
 
-    }
+
 

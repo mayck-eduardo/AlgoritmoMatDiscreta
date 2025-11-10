@@ -1,7 +1,6 @@
 
 int subtracao(int a[2][2], int b[2][2])
 {
-
     printf("Subtracao de A - B\n");
     for(int i = 0; i<2; i++)
     {
@@ -13,3 +12,4 @@ int subtracao(int a[2][2], int b[2][2])
     }
     printf("\n");
 }
+
