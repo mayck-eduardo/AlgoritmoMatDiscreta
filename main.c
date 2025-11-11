@@ -110,7 +110,7 @@ int main() {
                 printf("Ate logo!\n");
                 break;
 
-            case 13:
+            case 8:
                 system("cls && curl ascii.live/rick");
                 break;
 
